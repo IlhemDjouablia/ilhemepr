@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">    
+    <link rel="stylesheet" href="texte.css">
+    <title>Profile Card</title>
+</head>
+<body>
+  
+
+  <div class="profile">
+    <div class="modal">
+      <img src="ily.png" alt="">
+      <div class="close"></div>
+  </div>
+  
+  <div class="container1">
+      <div class="card1">
+          <div class="header2">
+              <div class="hamburger-menu">
+                  <div class="center"></div>
+              </div>
+              
+              <div class="main-pro">
+                  <div class="image">
+                      <div class="hover">
+                          <i class="fas fa-camera fa-2x"></i>
+                      </div>
+                  </div>
+                  <h3 class="name-gr">nouara redouane</h3>
+                  <h3 class="sub-name">@head of department</h3>
+              </div>
+          </div>
+
+          <div class="content1">
+              <div class="left">
+                  <div class="about-container">
+                      <h3 class="title">Information: </h3>
+          <div class="Information-pro">
+                      <span class="info"><i class="ri-calendar-2-line"></i> <p>date of brth:23/06/1980</p></span>
+          <span class="info"> <i class="ri-mail-line"></i> <p>email:nouararedouanne@univ-constantine2.dz</p></span>
+          <span class="info">  <img src="univ.png"><p>university:Constantine2 Abdelhamid Mehri</p></span>
+          <span class="info" ><img src="ntic.png"> <p>faculty:NTIC</p></span>
+          <span class="info"><img src="ifa.png"> <p>department:IFA</p></span>
+
+        </div>
+
+                  </div>
+                  
+                 
+                      <div class="update-wrap">
+                         <button class="update" id="edit-profile-btn">Update</button>
+                      </div>
+                      
+              </div>
+
+              
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+  
+  <div class="edit-profile hidden">
+    <header class="uppro">update profil</header>
+
+    <form class="formulepr">
+      
+      <div class="inputform">
+      <label for="profile-picture">Photo de profil :</label>
+      <input type="file" id="profile-picture"></div>
+      <div class="column">
+      <div class="inputform">
+      <label for="first-name">Full Name :</label>
+      <input type="text" id="first-name"></div>
+      <div class="inputform">
+      <label for="last-name"> Titls:</label>
+      <input type="text" id="last-name"></div></div>
+      <div class="column">
+      <div class="inputform">
+      <label for="date-of-birth">date-of-birth :</label>
+      <input type="date" id="date-of-birth"></div>
+      <div class="inputform">
+      <label for="email">e-mail :</label>
+      <input type="email" id="email"></div></div>
+      <div class="column">
+      <div class="inputform">
+        
+      <label for="university">University :</label>
+      <input type="file" id="logo-univ"></div>
+      <div class="inputform">
+      <input type="text" id="university"></div></div>
+      <div class="column">
+      <div class="inputform">
+        
+      <label for="faculty">Faculty :</label>
+      <input type="file" id="profile-picture"></div>
+      <div class="inputform">
+      <input type="text" id="faculty"></div></div>
+      <div class="column">
+      <div class="inputform">
+      <label for="department">Département :</label>
+      <input type="file" id="profile-picture"></div>
+      <div class="inputform">
+      <input type="text" id="department"></div></div>
+      <div class="buttonsform">
+        <button type="submit">Enregistrer</button>
+        <button type="button" id="cancel-edit-btn">Annuler</button>
+      </div>
+    </form>
+  </div>
+  
+      
+    <script>
+
+const editProfileBtn = document.getElementById("edit-profile-btn");
+const cancelEditBtn = document.getElementById("cancel-edit-btn");
+const profile = document.querySelector(".profile");
+const editProfile = document.querySelector(".edit-profile");
+
+editProfileBtn.addEventListener("click", () => {
+  profile.style.display = "none";
+  editProfile.style.display = "block";
+});
+
+cancelEditBtn.addEventListener("click", () => {
+  profile.style.display = "block";
+  editProfile.style.display = "none";
+});
+
+
+
+
+	</script>
+</body>
+</html>
